@@ -2,20 +2,8 @@
 <html>
 <head>
     <title></title>  
-
     <style>
 
-
-h2{
-    text-align: center;
-    color: white;
-    font-size: 18px;
-}
-h1{
-    text-align: center;
-    color:white;
-    font-size: 15px;
-}
 
  .clear{
     clear:both;
@@ -29,14 +17,11 @@ h1{
     margin: 50px 45px 15px 45px;
     padding: 10px;
     display: inline-block;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     font-size: 20px;
 }
-body{
-    background-image: url("bg2.jpg");
-    height: 300px;
-}
+
 .down{
     position: relative;
     display: inline-block;
@@ -44,7 +29,7 @@ body{
 
 .down_content{
     width:3000px;
-    height:110px;   
+    height:120px;   
     display: none;
     z-index: 10;
     background-color: #ffffff;   
@@ -65,19 +50,14 @@ body{
 .down:hover .down_content {
     display: block;
 }
-#list2 li{
-    display: inline-block;
-    float: left;
-}
-#list2 ul{
-    white-space: nowrap;
-    margin top: 20px;
+body{
+    background-image: url("bg.jpg");
+    background-size: 1900px;
 }
 
 #login{
     display: inline-block;
     margin:35px;
-    color: white;
 }
 #login li{
     padding-left:40px;
@@ -88,11 +68,36 @@ body{
 #list li{
     display: inline-block;
     margin: 40px;
+
 }
 #list ul{
-    background-color: black;
     white-space: nowrap;
-    margin top: 20px;
+    margin top: 20px ;
+}
+h4{
+    font-size: 25px;
+    text-align: left;
+    color: white;
+
+}
+h3{
+    display: inline-block;
+    position: relative;
+    height: inherit;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: left;
+    vertical-align: middle;
+    color: white
+}
+h2{
+    text-align: left;
+    color: white;
+}
+h1{
+    text-align: left;
+    color:white;
+    font-size: 18px;
 }
 #info ul{
     white-space: nowrap;
@@ -107,36 +112,16 @@ footer{
   bottom:0px; 
   height:200px; 
   width:100%; 
-   
-  color: white; }
-
-*{margin:0;padding:0;}
-
-    ul,li{list-style:none;}
-    .slide{ height:775px;overflow:hidden;}
-    .slide ul{position:relative;height:100%;}
-    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 8s infinite;}
-    .slide li:nth-child(1){background-image:url(stone.jpg);animation-delay:0s}
-    .slide li:nth-child(2){background-image:url(inthe.jpg);animation-delay:2s}
-    .slide li:nth-child(3){background-image:url(luka.jpg);animation-delay:4s}
-    .slide li:nth-child(4){background-image:url(cash.jpg);animation-delay:6s}
-    @keyframes fade {
-      0% {opacity:0;}
-      5% {opacity:1;}
-      25% {opacity:1;}
-      30% {opacity:0;}
-      100% {opacity:0;}
-    }
+  color: white;
+}
 .btn { display:block; width:200px; height:40px; line-height:40px; margin:15px auto; background-color:#990000; text-align:center; cursor: pointer; color:#fff; transition:all 0.9s, color 0.3; } 
 .btn:hover{color:#fff;}
 .hover1:hover{ box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset; }
-
 
 </style>
 </head>
 <body>
     <center>
-       
         <header>            
              <a id=logo href='index.html' style="float: center; margin: 70px;"><img src='cinema2.png' width=12% height=40px></a>
             <!--다운-->
@@ -171,36 +156,24 @@ footer{
                 <div class="dropdown">
         <ul>
             <div class="dropdownContents">
-                <li style="color: white; margin-right: 160px;" ><strong>MY PAGE</strong></li>      </div>
+                <li style="color: white; margin-right: 80px;"><strong>MY PAGE</strong></li>      </div>
         </ul>
     </div>
     
-            </ul>  
-        </header> 
- <!--슬라이드-->
- <div class="slide">
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
-   
-          
-
-
-        <!--영화 리스트 -->    
-        <br>
-        <img src="Cul.png">
-        <br>
+            </ul>
+    
+            </ul>   
+        </header>  
+        &nbsp;&nbsp;&nbsp;<img src="chart.png" width="20%" height="20%">
+        <br><br>
+        <img src="line2.png"> 
         <ul id=list>
             <li id=list>            
-            <img src="cash1.png">            
+            <img src="cash1.png" >
             <h2>캐시트럭</h2>
             <h1>예매율 20.9% 평점 8.0</h1>
             <h1>2021.06.09 개봉</h1>
-            <button class="btn hover1" onclick="location.href='gimpo.html' "> 예매하기 </button> 
+            <button class="btn hover1"  onclick="location.href='gimpo.html' "> 예매하기 </button>
             </li>
 
             <li id=list>   
@@ -208,7 +181,7 @@ footer{
             <h2>크루엘라</h2>
             <h1>예매율 19.1% 평점 9.9</h1>
             <h1>2021.05.26 개봉</h1>
-            <button class="btn hover1" onclick="location.href='gimpo.html' "> 예매하기 </button> 
+            <button class="btn hover1"  onclick="location.href='gimpo.html' "> 예매하기 </button>
             </li>
 
             <li id=list>   
@@ -216,7 +189,7 @@ footer{
             <h2>분노의 질주</h2>
             <h1>예매율 5.8% 평점 7.5</h1>
             <h1>2021.05.19 개봉</h1>
-            <button class="btn hover1" onclick="location.href='gimpo.html' "> 예매하기 </button>
+            <button class="btn hover1"  onclick="location.href='gimpo.html' "> 예매하기 </button>
             </li>
 
             <li id=list>   
@@ -224,62 +197,49 @@ footer{
             <h2>플래시 백</h2>
             <h1>예매율 1.5% 평점 5.0</h1>
             <h1>2021.06.10 개봉</h1>
-            <button class="btn hover1" onclick="location.href='gimpo.html' "> 예매하기 </button>
+            <button class="btn hover1"  onclick="location.href='gimpo.html' "> 예매하기 </button>
             </li>
-
-            <li id=list>   
+        </ul>
+        <ul id=list>
+            <li id=list>            
             <img src="quiet.png" >
             <h2>콰이어트 플레이스</h2>
             <h1>예매율 14.9%</h1>
-            <h1>2021.06.16 개봉 D-5</h1>
-            <button class="btn hover1" onclick="location.href='gimpo.html' "> 예매하기 </button> 
+            <h1>2021.06.16 개봉 D-2</h1>
+            <button class="btn hover1"  onclick="location.href='gimpo.html' "> 예매하기 </button> 
+            </li>
+
+            <li id=list>   
+            <img src="luka1.jpg" >
+            <h2>루카</h2>
+            <h1>예매율 0.2%</h1>
+            <h1>2021.06.17 개봉 D-3</h1>
+            <button class="btn hover1"  onclick="location.href='gimpo.html' "> 예매하기 </button> 
+            </li>
+
+            <li id=list>   
+            <img src="sword.jpg" >
+            <h2>귀멸의 칼날</h2>
+            <h1>예매율 1.4% 평점 9.2</h1>
+            <h1>2021.02.03 개봉</h1> 
+            <button class="btn hover1"  onclick="location.href='gimpo.html' "> 예매하기 </button>
+            </li>
+
+            <li id=list>   
+            <img src="child.jpg" >
+            <h2>아야와 마녀</h2>
+            <h1>예매율 4.2% 평점 7.2</h1>
+            <h1>2021.06.10 개봉 </h1>
+            <button class="btn hover1"  onclick="location.href='gimpo.html' "> 예매하기 </button> 
             </li>
         </ul>
-         <ul id=list2 >    
-            <li id=list2 >        
-            <img src="event_cru.jpg" style="margin-left: 320px;">
-            </li>
+    </center>
+ 
 
-            <li id=list2 >        
-            <img src="event_swing.jpg" style="margin-left: 150px;">
-            </li>
-
-            <li id=list2 >        
-            <img src="event_aya.jpg" style="margin-left: 150px;">
-            </li>
-    </ul>
-
-    <ul id=list2 >    
-            <li id=list2 >        
-            <img src="event_sa.jpg" style="margin-left: 320px; margin-top: 50px;">
-            </li>
-
-            <li id=list2 >        
-            <img src="event_sa3.jpg" style="margin-left: 150px; margin-top: 50px;">
-            </li>
-
-            <li id=list2 >        
-            <img src="event_sa2.jpg" style="margin-left: 150px; margin-top: 50px;">
-            </li>
-    </ul>
-
-    <ul id=list2 >    
-            <li id=list2 >        
-            <img src="event_ka.jpg" style="margin-left: 320px; margin-top: 50px;">
-            </li>
-
-            <li id=list2 >        
-            <img src="event_2.jpg" style="margin-left: 150px; margin-top: 50px;">
-            </li>
-
-            <li id=list2 >        
-            <img src="event_3.jpg" style="margin-left: 150px; margin-top: 50px;">
-            
-            <br><br><br><br><br><br><br><br><br><br></li>  
-    </ul>
-
-
-    <footer style="text-align: center;"><ul id="info">
+</body>
+ <br>
+    <br>
+<footer style="text-align: center;"><ul id="info">    
         <hr width = "80%" color = "white" style="margin-left: 190px; margin-top: 200px;">
         <li>이용약관</li>
         <li>개인정보처리방침</li>
@@ -292,9 +252,4 @@ footer{
         <li>사업자등록번호 : 111-22-22243</li>
     </ul>
 </footer>
-
-</div>
-</body>
-
-
 </html>
